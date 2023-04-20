@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+.full {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(../../images/stars.gif);
+}/*# sourceMappingURL=style.css.map */
