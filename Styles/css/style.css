@@ -1,3 +1,11 @@
+@font-face {
+  font-family: BigFont;
+  src: url("../../Fonts/PressStart2P-vaV7.ttf");
+}
+* {
+  font-family: BigFont;
+}
+
 .full {
   display: flex;
   flex-direction: column;
@@ -6,4 +14,14 @@
   flex-wrap: wrap;
   justify-content: center;
   background-image: url(../../images/stars.gif);
+  background-size: cover;
+  resize: both;
+}
+
+.fs-0 {
+  font-size: 3rem;
+}
+
+.h-30 {
+  height: 30vh;
 }/*# sourceMappingURL=style.css.map */
