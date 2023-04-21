@@ -7,24 +7,65 @@
 *{
   // applies the custom font to everythign on the page
   font-family: BigFont;
+  cursor: none;
+}
+
+#ghost{
+  position: absolute;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 35px;
+    // border-radius: 50%;
+    // border: 2px solid white;
+    z-index: 100;
+}
+
+#pacman {
+  position: absolute;
+    transform: translate(-50%, -50%);
+    height: 55px;
+    width: 55px;
+    // border-radius: 50%;
+    // border: 2px solid white;
+    z-index: 100;
 }
 
 .full{
  display:flex;
- flex-direction: column;
+ flex-direction: row;
   height: 100vh;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  align-content: center;
   background-image: url(../../images/stars.gif);
   background-size: cover;
   resize: both;
 }
 
+.small{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
 .fs-0{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .h-30{
   height: 30vh;
+}
+
+.my-50{
+  margin-top: 20%;
+}
+
+.fs-small{
+  font-size: .75rem;
+}
+
+nav{
+  z-index: 2;
 }
