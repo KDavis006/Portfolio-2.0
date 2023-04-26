@@ -24,11 +24,14 @@ function ghostMovement(){
 
   // check if the element has class hover, if yes then run to top left corner
   if ($("#ghost").hasClass("hover")) {
-    $xp -= ($xp/12);
-    $yp -= ($yp/12);
+  let circle = document.getElementById('circle');
+  let left = $mouseX.offsetX;
+  let top = $mouseY.offsetY;
+  circle.style.left = left + 'px';
+  circle.style.top = top + 'px';
   } else { // otherwise chase the cursor
-    $xp += (($mouseX - $xp)/12);
-    $yp += (($mouseY - $yp)/12);
+    $xp += (($mouseX - $xp)/16);
+    $yp += (($mouseY - $yp)/16);
   }
   
   // set the new position of the ghost
@@ -36,13 +39,13 @@ function ghostMovement(){
 }
 
 // makes it follow the mouse but slower so it looks like the cursor is running away
-var $loop = setInterval(ghostMovement, 30);
+var $loop = setInterval(ghostMovement, 1);
 
 // whenever you hover over anything the ghost runs away from your cursor
 $('.hover').mouseenter(function() {
   
   // remove the mousemove event listener and run to top left corner
-  $(document).off("mousemove");
+  $(window).off("mousemove");
   $("#ghost").addClass("hover");
   
 }).mouseleave(function(){
