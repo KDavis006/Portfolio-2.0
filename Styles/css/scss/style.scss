@@ -7,8 +7,11 @@
 *{
   // applies the custom font to everythign on the page
   font-family: BigFont;
-  cursor: none;
   overflow-x: hidden;
+}
+
+body{
+  cursor: url('../../images/pacmanCursor.gif'), auto;
 }
 
 #ghost{
@@ -69,4 +72,16 @@
 
 nav{
   z-index: 2;
+}
+
+.filler {
+  display: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }

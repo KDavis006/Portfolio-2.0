@@ -1,8 +1,5 @@
-// acts as the cursor
-let cursorPacman = document.getElementById('pacman');
-const onMouseMove = (e) =>{
-  cursorPacman.style.left = e.pageX + 'px';
-  cursorPacman.style.top = e.pageY + 'px';
+const onMouseMove = () =>{
+
 }
 
 document.addEventListener('mousemove', onMouseMove);
@@ -24,14 +21,9 @@ function ghostMovement(){
 
   // check if the element has class hover, if yes then run to top left corner
   if ($("#ghost").hasClass("hover")) {
-  let circle = document.getElementById('circle');
-  let left = $mouseX.offsetX;
-  let top = $mouseY.offsetY;
-  circle.style.left = left + 'px';
-  circle.style.top = top + 'px';
   } else { // otherwise chase the cursor
-    $xp += (($mouseX - $xp)/16);
-    $yp += (($mouseY - $yp)/16);
+    $xp += (($mouseX - $xp)/32);
+    $yp += (($mouseY - $yp)/32);
   }
   
   // set the new position of the ghost

@@ -4,8 +4,11 @@
 }
 * {
   font-family: BigFont;
-  cursor: none;
   overflow-x: hidden;
+}
+
+body {
+  cursor: url("../../images/pacmanCursor.gif"), auto;
 }
 
 #ghost {
@@ -21,7 +24,7 @@
   transform: translate(-50%, -50%);
   height: 55px;
   width: 55px;
-  z-index: 100;
+  z-index: 110;
 }
 
 .full {
@@ -62,4 +65,16 @@
 
 nav {
   z-index: 2;
+}
+
+.filler {
+  display: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
