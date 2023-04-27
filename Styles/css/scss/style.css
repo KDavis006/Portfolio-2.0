@@ -1,42 +1,35 @@
 @font-face {
-  // sets a custom font
   font-family: BigFont;
   src: url("../../Fonts/PressStart2P-vaV7.ttf");
 }
-
-*{
-  // applies the custom font to everythign on the page
+* {
   font-family: BigFont;
   overflow-x: hidden;
 }
 
-body{
-  cursor: url('../../images/pacmanCursor.gif'), auto;
+body {
+  cursor: url("../../images/pacmanCursor.gif"), auto;
 }
 
-#ghost{
+#ghost {
   position: absolute;
-    transform: translate(-50%, -50%);
-    height: 35px;
-    width: 35px;
-    // border-radius: 50%;
-    // border: 2px solid white;
-    z-index: 100;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 35px;
+  z-index: 100;
 }
 
 #pacman {
   position: absolute;
-    transform: translate(-50%, -50%);
-    height: 55px;
-    width: 55px;
-    // border-radius: 50%;
-    // border: 2px solid white;
-    z-index: 110;
+  transform: translate(-50%, -50%);
+  height: 55px;
+  width: 55px;
+  z-index: 110;
 }
 
-.full{
- display:flex;
- flex-direction: row;
+.full {
+  display: flex;
+  flex-direction: row;
   height: 100vh;
   width: 100%;
   flex-wrap: wrap;
@@ -46,7 +39,7 @@ body{
   resize: both;
 }
 
-.small{
+.small {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -54,23 +47,23 @@ body{
   height: 100vh;
 }
 
-.fs-0{
+.fs-0 {
   font-size: 2rem;
 }
 
-.h-30{
+.h-30 {
   height: 30vh;
 }
 
-.my-50{
+.my-50 {
   margin-top: 20%;
 }
 
-.fs-small{
-  font-size: .75rem;
+.fs-small {
+  font-size: 0.75rem;
 }
 
-nav{
+nav {
   z-index: 2;
 }
 
@@ -86,6 +79,6 @@ nav{
   text-align: center;
 }
 
-.projects{
+.projects {
   max-width: 500px;
-}
+}/*# sourceMappingURL=style.css.map */
