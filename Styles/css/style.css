@@ -206,4 +206,17 @@ nav {
   margin-left: 100px;
   margin-right: 100px;
   border-left: violet solid 3px;
+}
+
+.contact-images {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: 25%;
+}
+
+.mail {
+  width: 500px;
+  height: 100px;
+  margin-left: 33%;
 }/*# sourceMappingURL=style.css.map */
