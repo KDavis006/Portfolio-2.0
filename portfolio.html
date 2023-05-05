@@ -16,30 +16,32 @@
 <!-- makes the theme dark due to bootstrap -->
 
 <body data-bs-theme="dark">
+
   <!-- Ghost that follows the cursor -->
   <img src='./images/ghost.png' id="ghost" alt="Ghost following the cursor">
+
   <!-- start of nav -->
   <nav class="hover fixed-top navbar navbar-expand-lg bg-black">
     <div class="container-fluid">
       <!-- title -->
-      <a class="navbar-brand" href="#">Portfolio</a>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <a class="navbar-brand text-primary">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-   </button> -->
+   </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <!-- takes you to the gallery -->
           <li class="nav-item">
-            <a class="hover nav-link raise" href="#projects">Gallery</a>
+            <a class="hover nav-link raise text-danger" href="#projects">Gallery</a>
           </li>
           <!-- takes you to my resume -->
           <li class="nav-item">
-            <a class="hover nav-link raise" href="#resume">Resume</a>
+            <a class="hover nav-link raise text-danger" href="#resume">Resume</a>
           </li>
           <!-- takes you to my contact area -->
           <li class="nav-item">
-            <a class="hover nav-link raise" href="#contacts">Contacts</a>
+            <a class="hover nav-link raise text-danger" href="#contacts">Contacts</a>
           </li>
         </ul>
       </div>
@@ -50,8 +52,8 @@
   <!-- start of the head area -->
   <div class="full w-100">
     <div class="w-75 small">
-      <h1 class="mx-5 px-5 fs-0 fw-bold">Hi My Name is Kyle</h1>
-      <h2 class="mx-5 px-5">I make websites and software applications</h2>
+      <h1 class="mx-5 px-5 fs-0 fw-bold text-primary">Hi My Name is Kyle</h1>
+      <h2 class="mx-5 px-5 text-danger">I make websites and software applications</h2>
     </div>
     <br>
     <img class='w-25 float-end h-50 my-50' src="./images/pixelArt.png" alt="8-bit picture of me">
@@ -59,51 +61,51 @@
   <!-- end of the head area -->
 
   <!-- start of the cards area -->
-  <div class="cards">
+  <div class="cards text-warning">
     <div id='card01' class="hover center card w-70 h-30 mx-2">
       <div id="head01">
-        <h5 id='card01' class="hover card-title fs-0">Skills and Training</h5>
-        <h6>Click Me</h6>
+        <h5 id='card01' class="hover card-title fs-0 text-primary">Skills and Training</h5>
+        <h6 class="text-danger">Click Me</h6>
       </div>
       <div id='filler01' class="hover filler card-body">
-        <p class="hover card-text fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum
+        <p class="hover card-text fs-small text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum
           repudiandae consequatur quia veritatis assumenda voluptate hic impedit beatae distinctio voluptatem a
           consequuntur cumque molestiae, optio iure error. Nulla totam, dolor tempora eaque officiis unde fugiat
           nesciunt quo voluptatum voluptate. Vitae fugiat corrupti ex necessitatibus quidem excepturi tempore dolorum
           architecto.
         </p>
-        <a href="http://google.com" class="hover card-link">Card link</a>
+        <a href="#resume" class="hover card-link">Resume</a>
       </div>
     </div>
     <br>
     <div id='card02' class="hover center card w-70 h-30 mx-2">
       <div id="head02">
-        <h5 class=" hover card-title fs-0">Qualifications</h5>
-        <h6>Click Me</h6>
+        <h5 class=" hover card-title fs-0 text-primary">Qualifications</h5>
+        <h6 class="text-danger">Click Me</h6>
       </div>
       <div id='filler02' class="hover filler card-body">
-        <p class="hover card-text fs-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsum
+        <p class="hover card-text fs-small text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsum
           facilis, voluptas sunt itaque, porro, ea natus odit quae voluptate eius recusandae optio. Cumque odit ullam,
           nemo modi possimus perferendis aperiam officia ratione maxime facere vero optio quos tempora numquam sed
           accusantium quia. Nesciunt ducimus, possimus ut impedit voluptatum quasi?
         </p>
-        <a href="#" class="card-link">Card link</a>
+        <a href="#resume" class="card-link">Resume</a>
       </div>
     </div>
     <br>
-    <div id='card03' class="hover center card w-0 h-30 mx-2">
+    <div id='card03' class="hover center card w-70 h-30 mx-2">
       <div id="head03">
-        <h5 class="hover card-title fs-0">Previous Employment</h5>
-        <h6>Click Me</h6>
+        <h5 class="hover card-title fs-0 text-primary">Previous Employment</h5>
+        <h6 class="text-danger">Click Me</h6>
       </div>
       <div id='filler03' class="hover filler card-body">
 
-        <p class="hover card-text fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        <p class="hover card-text fs-small text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
           voluptatibus quo ipsam optio commodi illum numquam consequuntur iure pariatur voluptate odio animi unde
           veritatis sequi ab amet rem quisquam impedit dolores repudiandae tenetur saepe? Quos, perspiciatis, voluptates
           aliquid sunt rem dolorum ab harum magni porro nihil sint libero fuga iure?
         </p>
-        <a href="#" class="hover card-link">Card link</a>
+        <a href="#resume" class="hover card-link">Resume</a>
       </div>
     </div>
   </div>
@@ -112,7 +114,7 @@
   <!-- Start of the projects zone -->
   <div id='projects' class="projects">
 
-    <h1 class="text-center">Projects</h1>
+    <h1 class="text-center text-primary">Projects</h1>
 
     <div class=" hover project-card">
       <div class="project-image">
@@ -120,7 +122,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Video Game Character Tier List</span></h1>
+          <h1><span>Video Game Character Tier List</span></h1>
           <p>Date: 09/12/2022</p>
           <p>First Project of the School Year I did With Three Others.</p>
           <ul>
@@ -137,7 +139,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>LittleMissMia</span></h1>
+          <h1><span>LittleMissMia</span></h1>
           <p>Date: 12/13/2022</p>
           <p>Website My Friend and I made for His sister And the second major project for the Semester.</p>
           <ul>
@@ -154,7 +156,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Calculator</span></h1>
+          <h1><span>Calculator</span></h1>
           <p>Date: 12/13/2022</p>
           <p>Just a simple Calculator and the Third Project for the first semester.</p>
           <ul>
@@ -171,7 +173,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Tic-Tac-Toe</span></h1>
+          <h1><span>Tic-Tac-Toe</span></h1>
           <p>Date: 12/14/2022</p>
           <p>Basic Tic Tac Toe website that keeps track of score also the Fourth Project of the first semester.</p>
           <ul>
@@ -188,7 +190,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Portfolio 1.0</span></h1>
+          <h1><span>Portfolio 1.0</span></h1>
           <p>Date: 12/19/2022</p>
           <p>My first iteration for my portfolio and the Final project for the first semester.</p>
           <ul>
@@ -205,7 +207,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Rigged Election</span></h1>
+          <h1><span>Rigged Election</span></h1>
           <p>Date: 01/27/2023</p>
           <p>A fun project to start of the second semester about a rigged election.</p>
           <ul>
@@ -223,7 +225,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Client Website</span></h1>
+          <h1><span>Client Website</span></h1>
           <p>Date: 03/27/2023</p>
           <p>A project where we work with an actual client in a team to mak them a website and the second biggest project of the year.</p>
           <ul>
@@ -241,7 +243,7 @@
       </div>
       <div class="project-details">
         <div class="center">
-          <h1>Name:<br><span>Impossible Word</span></h1>
+          <h1><span>Impossible Word</span></h1>
           <p>Date: 03/31/2023</p>
           <p>My main project to compete in FBLA game development and simulation and the biggest project I did in the school year</p>
           <ul>
@@ -256,26 +258,30 @@
 
   <!-- start of my resume -->
   <div id='resume' class="resume">
-    <div class="px-5 resume-border">
-      <h1 class="text-center">Resume</h1><br><br><br><br>
-      <h2 class="text-center">Kyle Davis</h2>
-      <h4 class="text-center">Phoenix, AZ</h4>
-      <h4 class="text-center">silvanarixkyle@gmail.com</h4><br><br><br><br>
+    <div class="resume-border text-warning">
+      <h1 class="text-center text-primary">Resume</h1><br><br><br><br>
+      <h2 class="text-center text-danger">Kyle Davis</h2>
+      <h4 class="text-center text-danger">Phoenix, AZ</h4>
+      <h4 class="text-center text-danger">silvanarixkyle@gmail.com</h4><br><br><br><br>
+
+      <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
 
 
-    <h3>Skills</h3><br><br><br>
+    <h3 class="text-primary">Skills</h3><br><br><br>
 
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Can understand some Spanish</li><br>
-      <li class="list-group-item">Beginner Back-end Developer</li><br>
-      <li class="list-group-item">Solid understanding of Javascript/CSS/HTML</li><br>
-      <li class="list-group-item">Basic but still decent understanding of Bootstrap/Jquery/SCSS</li><br>
-      <li class="list-group-item">Good at going and getting info off of the web and fast learner</li><br>
-      <li class="list-group-item">Very strong knowledge retention and common sense</li><br>
-      <li class="list-group-item">Strong use of agile development practices</li><br>
+      <li class="list-group-item text-warning">Can understand some Spanish</li><br>
+      <li class="list-group-item text-warning">Beginner Back-end Developer</li><br>
+      <li class="list-group-item text-warning">Solid understanding of Javascript/CSS/HTML</li><br>
+      <li class="list-group-item text-warning">Basic but still decent understanding of Bootstrap/Jquery/SCSS</li><br>
+      <li class="list-group-item text-warning">Good at going and getting info off of the web and fast learner</li><br>
+      <li class="list-group-item text-warning">Very strong knowledge retention and common sense</li><br>
+      <li class="list-group-item text-warning">Strong use of agile development practices</li><br>
     </ul><br><br><br><br><br><br><br><br><br><br>
 
-    <h3>Experience</h3><br><br><br>
+    <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
+
+    <h3 class="text-primary">Experience</h3><br><br><br>
 
       <h5>Recycle Your Bicycle, Phoenix, AZ - <i>Volunteer</i></h5><br>
       <p><i>November 2022</i></p><br>
@@ -285,7 +291,9 @@
       <p><i>June 2022 - July 2022</i></p><br>
       <p>Help people throughout the store and helped handle transactions</p><br><br><br><br>
 
-    <h3>Education</h3><br><br><br>
+      <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
+
+    <h3 class="text-primary">Education</h3><br><br><br>
 
       <h5>West-MEC Coding Program, Phoenix, AZ</h5><br>
       <p><i>August 2022 - May 2024</i></p><br>
@@ -294,8 +302,10 @@
       <h5>Moon Valley Highschool, Phoenix, AZ</h5><br>
       <p><i>August 2020 - May 2024</i></p><br><br><br><br>
 
+      <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
 
-    <h3>Exrtacurricular and Awards</h3><br><br><br>
+
+    <h3 class="text-primary">Exrtacurricular and Awards</h3><br><br><br>
 
       <h5>FBLA Officer - Treasurer</h5><br>
       <p><i>August 2022 - May 2023</i></p><br>
@@ -311,13 +321,14 @@
     </div>
   </div>
   <!-- end of my resume -->
+
   <br><br><br><br><br><br><br><br>
 
   <!-- start of Contact Me -->
   <div id="contacts" class="mb-4 text-center">
-    <h1>--Contact Me--</h1>
+    <h1 class="text-primary">--Contact Me--</h1>
     <br><br>
-    <h3 class="hover">Email: <span><a href="mailto: silvanarixkyle@gmail.com">silvanarixkyle@gmail.com</a></span></h3>
+    <h3 class="hover text-danger">Email: <span><a href="mailto: silvanarixkyle@gmail.com">silvanarixkyle@gmail.com</a></span></h3>
   </div>
   <!-- end of Contact Me -->
 
@@ -331,17 +342,17 @@
       <section class="mb-4">
         <!-- Linkedin -->
         <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.linkedin.com/in/kyle-davis-42530b25b/" role="button" data-mdb-ripple-color="dark" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
+            class="fab fa-linkedin text-primary"></i></a>
         <!-- Github -->
         <a class="btn btn-link btn-floating btn-lg m-1" href="https://github.com/KDavis006" role="button" target="_blank"><i
-            class="fab fa-github"></i></a>
+            class="fab fa-github text-primary"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
   
     <!-- Developed By -->
-    <div class="text-center p-3">
+    <div class="text-center p-3 text-danger">
       Developed By: Kyle Davis
     </div>
     <!-- Developed By -->

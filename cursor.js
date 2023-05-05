@@ -3,6 +3,7 @@ const onMouseMove = () =>{
 }
 
 document.addEventListener('mousemove', onMouseMove);
+document.addEventListener('scroll', onMouseMove);
 
 // start of the ghost movement
 // this makes the ghost follow the cursor in a more delayed action so that it looks like the pacman cursor is running away from the ghost

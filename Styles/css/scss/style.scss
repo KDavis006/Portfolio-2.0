@@ -24,23 +24,11 @@ body{
     z-index: 100;
 }
 
-#pacman {
-  position: absolute;
-    transform: translate(-50%, -50%);
-    height: 55px;
-    width: 55px;
-    // border-radius: 50%;
-    // border: 2px solid white;
-    z-index: 110;
-}
 
 .full{
- display:flex;
- flex-direction: row;
+  display:flex;
+  flex-direction: row;
   height: 100vh;
-  width: 100%;
-  flex-wrap: wrap;
-  align-content: center;
   background-image: url(../../images/stars.gif);
   background-size: cover;
   resize: both;
@@ -75,7 +63,7 @@ body{
 }
 
 nav{
-  z-index: 2;
+  overflow-x: hidden;
 }
 
 .filler {
@@ -88,7 +76,6 @@ nav{
   justify-content: center;
   align-content: center;
   text-align: center;
-  width: 700px;
   transition: 1s;
   &:hover{
     transform: translate(-35%, 0%);
@@ -98,7 +85,7 @@ nav{
 .cards{
   padding: {
     top: 1.25rem;
-    left: 26rem;
+    left: 30vw;
   }
   background: #000;
 }
@@ -111,7 +98,7 @@ nav{
 
 .project-card {
   transform: translate(25%, -1%);
-  width: 1000px;
+  width: 70vw;
   margin: {
     top: 3.125rem;
   }
@@ -175,11 +162,12 @@ nav{
 .project-card{
   .project-details{
     .center{
-      padding: 20px;
+      // padding: 20px;
       text-align: center;
       background: #fff;
       position: absolute;
       top: 50%;
+      font-size: .9375rem;
       transform: translateY(-50%);
     }
   }
@@ -192,8 +180,7 @@ nav{
         margin: 0;
         padding: 0;
         color: #ff3636;
-        line-height: 20px;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-transform: uppercase;
       }
     }
@@ -205,7 +192,7 @@ nav{
     .center{
       h1{
         span{
-          font-size: 14px;
+          font-size: .875rem;
           color: #262626;
         }
       }
@@ -217,7 +204,6 @@ nav{
   .project-details{
     .center{
       p{
-        margin: 10px 0;
         padding: 0;
         color: #262626;
       }
@@ -262,7 +248,6 @@ nav{
   color: #fff;
   width: 30px;
   height: 30px;
-  line-height: 30px;
   text-align: center;
   transform: .5s;
           }
@@ -294,9 +279,12 @@ nav{
 
 .resume-border{
   margin: {
-    left: 100px;
-    right: 100px;
+    left: 10vw;
   }
+  padding: {
+    left: 10vw;
+  }
+  overflow-wrap: break-word;
   border-left: violet solid 3px;
 }
 
@@ -314,5 +302,74 @@ nav{
   height: 100px;
   margin: {
     left: 33%;
+  }
+}
+
+.timeline-image{
+  height: 64px;
+  transform: translate(-100%);
+}
+
+
+.float{
+  float: inline-start;
+}
+
+.nav-expand-lg{
+.nav-row{
+  flex-direction: row;
+}
+}
+
+// start of the media queries
+
+@media (max-width: 769px){
+  .full{
+    flex-direction: column;
+    justify-content: center;
+    padding: {
+      left: 10vw;
+    }
+    img{
+      margin: {
+        top: 0;
+        bottom: 0;
+        left: 20vw;
+      }
+      width: 30%;
+    }
+    .small{
+      height: auto;
+      margin: {
+        top: 10vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 481px){
+  h1{
+    font-size: .9375rem;
+  }
+  h2{
+    font-size: .875rem;
+  }
+  h3{
+    font-size: .8125rem;
+  }
+  h4{
+    font-size: .75rem;
+  }
+  h5{
+    font-size: .6875rem;
+  }
+  h6{
+    font-size: .625rem;
+  }
+  p{
+    font-size: .625rem;
+  }
+  li{
+    font-size: .625rem;
   }
 }
