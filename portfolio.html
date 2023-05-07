@@ -1,92 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./Styles/css/style.css" />
-    <title>Portfolio 2.0</title>
-  </head>
-  <!-- makes the theme dark due to bootstrap -->
-  <body data-bs-theme="dark">
-    <!-- Ghost that follows the cursor -->
-    <img src='./images/ghost.png' id="ghost" alt="Ghost following the cursor">
-    <!-- the pacman cursor that is running away from the ghost -->
-    <img src='./images/pacman.gif' id="pacman" alt="pacman acting as your cursor running away from the ghost">
-    <!-- start of nav -->
-    <nav class="hover fixed-top navbar navbar-expand-lg bg-black">
-      <div class="container-fluid">
-        <!-- title -->
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./images/Controller2.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./Styles/css/style.css" />
+  <title>Portfolio 2.0</title>
+</head>
+<!-- makes the theme dark due to bootstrap -->
+
+<body data-bs-theme="dark">
+
+  <!-- Ghost that follows the cursor -->
+  <img src='./images/ghost.png' id="ghost" alt="Ghost following the cursor">
+
+  <!-- start of nav -->
+  <nav class="hover fixed-top navbar navbar-expand-lg bg-black">
+    <div class="container-fluid">
+      <!-- title -->
+      <a class="navbar-brand text-primary">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-   </button> -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <!-- takes you to the gallery -->
-            <li class="nav-item">
-              <a class="hover nav-link raise" href="#">Gallery</a>
-            </li>
-            <!-- takes you to my resume -->
-            <li class="nav-item">
-              <a class="hover nav-link raise" href="#">Resume</a>
-            </li>
-            <!-- takes you to my contact area -->
-            <li class="nav-item">
-              <a class="hover nav-link raise" href="#">Contacts</a>
-            </li>
+    <span class="navbar-toggler-icon">
+   </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- takes you to the gallery -->
+          <li class="nav-item">
+            <a class="hover nav-link raise text-danger" href="#projects">Gallery</a>
+          </li>
+          <!-- takes you to my resume -->
+          <li class="nav-item">
+            <a class="hover nav-link raise text-danger" href="#resume">Resume</a>
+          </li>
+          <!-- takes you to my contact area -->
+          <li class="nav-item">
+            <a class="hover nav-link raise text-danger" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- start of the head area -->
+  <div class="full w-100">
+    <div class="w-75 small">
+      <h1 class="mx-5 fs-0 fw-bold text-primary">Hi My Name is Kyle</h1>
+      <h2 class="mx-5 text-danger">I make websites and software applications</h2>
+    </div>
+    <br>
+    <img class='w-25 float-end h-50 my-50' src="./images/pixelArt.png" alt="8-bit picture of me">
+  </div>
+  <!-- end of the head area -->
+
+  <!-- start of the cards area -->
+  <div class="cards text-warning">
+    <div id='card01' class="hover center card w-70 h-30 mx-2">
+      <div id="head01">
+        <h5 id='card01' class="hover card-title fs-0 text-primary">Skills and Training</h5>
+        <h6 class="text-danger">Click Me</h6>
+      </div>
+      <div id='filler01' class="hover filler card-body">
+        <p class="hover card-text text-warning">
+          I am a student at West-MEC for their coding and programming program and my skills: 
+          <ul class="list-group list-group-flush">
+          <li class="list-group-item text-warning">Can understand some Spanish</li>
+          <li class="list-group-item text-warning">Beginner Back-end Developer</li>
+          <li class="list-group-item text-warning">Solid understanding of Javascript/CSS/HTML</li>
+          <li class="list-group-item text-warning">Basic but still decent understanding of Bootstrap/Jquery/SCSS</li>
+          <li class="list-group-item text-warning">Good at going and getting info off of the web and fast learner</li>
+          <li class="list-group-item text-warning">Very strong knowledge retention and common sense</li>
+          <li class="list-group-item text-warning">Strong use of agile development practices</li>
+
+          
+        </p>
+        <a href="#resume" class="hover card-link">Resume</a>
+      </div>
+    </div>
+    <br>
+    <div id='card02' class="hover center card w-70 h-30 mx-2">
+      <div id="head02">
+        <h5 class=" hover card-title fs-0 text-primary">Qualifications</h5>
+        <h6 class="text-danger">Click Me</h6>
+      </div>
+      <div id='filler02' class="hover filler card-body">
+        <p class="hover card-text text-warning">
+          My current qualifications are that I am currently a Highschool student in my junior year. I also go to West-MEC for coding and programming. I have been studying coding and programming for about about four years so far and during that time I have learned many skills like HTML/CSS/JS and also recently I have started learning Bootstrap/SCSS/JQUERY to further enhance my skills in coding.
+        </p>
+        <a href="#resume" class="card-link">Resume</a>
+      </div>
+    </div>
+    <br>
+    <div id='card03' class="hover center card w-70 h-30 mx-2">
+      <div id="head03">
+        <h5 class="hover card-title fs-0 text-primary">Previous Employment</h5>
+        <h6 class="text-danger">Click Me</h6>
+      </div>
+      <div id='filler03' class="hover filler card-body">
+
+        <p class="hover card-text text-warning">
+          I worked at Fry's Food and Drug for about a month and a half as a cashier but in that month I got into the higher end of the scanning speed and procuce scanning at my store. I also have volenteered for many different things like the Recycle your Bicycle where we refurbished bikes for foster children. 
+        </p>
+        <a href="#resume" class="hover card-link">Resume</a>
+      </div>
+    </div>
+  </div>
+  <!-- end of the cards area -->
+
+  <!-- Start of the projects zone -->
+  <div id='projects' class="projects">
+
+    <h1 class="text-center text-primary">Projects</h1>
+
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/tierList.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Video Game Character Tier List</h1>
+          <p>Date: 09/12/2022</p>
+          <p>First Project of the School Year I did With Three Others.</p>
+          <ul>
+            <li><a href="https://github.com/asherpage/Project-AKBP" target="_blank"><i class="fa fa-github" aria-hidden="true">f09b</i></a></li>
+            <li><a href="https://asherpage.github.io/Project-AKBP/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- end of navbar -->
-    <!-- start of the head area -->
-    <div class="full w-100">
-      <div class="w-75 small">
-      <h1 class="mx-5 px-5 fs-0 fw-bold">Hi My Name is Kyle</h1>
-      <h2 class="mx-5 px-5">I make websites and software applications</h2>
-      </div>
-      <br>
-      <img class='w-25 float-end h-25 my-50' src="./images/Controller2.png" alt="8-bit controller">
     </div>
-    <!-- end og the head area -->
 
-    <!-- start of the cards area -->
-    <div class="hover card w-50 h-30 mx-2">
-      <div class="hover card-body">
-        <h5 class="hover card-title fs-0">Skills and Training</h5>
-        <p class="hover card-text fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum repudiandae consequatur quia veritatis assumenda voluptate hic impedit beatae distinctio voluptatem a consequuntur cumque molestiae, optio iure error. Nulla totam, dolor tempora eaque officiis unde fugiat nesciunt quo voluptatum voluptate. Vitae fugiat corrupti ex necessitatibus quidem excepturi tempore dolorum architecto.
-        </p>
-        <a href="http://google.com" class="hover card-link">Card link</a>
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/LittleMissMia.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">LittleMissMia</h1>
+          <p>Date: 12/13/2022</p>
+          <p>Website My Friend and I made for His sister And the second major project for the Semester.</p>
+          <ul>
+            <li><a href="https://github.com/KDavis006/littlemissmia" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://kdavis006.github.io/littlemissmia/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <br>
-    <div class="hover card w-50 h-30 mx-2">
-      <div class="hover card-body">
-        <h5 class=" hover card-title fs-0">Qualifications</h5>
-        <p class="hover card-text fs-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsum facilis, voluptas sunt itaque, porro, ea natus odit quae voluptate eius recusandae optio. Cumque odit ullam, nemo modi possimus perferendis aperiam officia ratione maxime facere vero optio quos tempora numquam sed accusantium quia. Nesciunt ducimus, possimus ut impedit voluptatum quasi?
-        </p>
-        <a href="#" class="card-link">Card link</a>
-      </div>
-    </div>
-    <br>
-    <div class="hover card w-50 h-30 mx-2">
-      <div class="hover card-body">
-        <h5 class="hover card-title fs-0">Previous Employment</h5>
-        <p class="hover card-text fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptatibus quo ipsam optio commodi illum numquam consequuntur iure pariatur voluptate odio animi unde veritatis sequi ab amet rem quisquam impedit dolores repudiandae tenetur saepe? Quos, perspiciatis, voluptates aliquid sunt rem dolorum ab harum magni porro nihil sint libero fuga iure?
-        </p>
-        <a href="#" class="hover card-link">Card link</a>
-      </div>
-    </div>
-    <!-- end of the cards area -->
 
-    <script src="cursor.js"></script>
-  </body>
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/Calculator.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Calculator</h1>
+          <p>Date: 12/13/2022</p>
+          <p>Just a simple Calculator and the Third Project for the first semester.</p>
+          <ul>
+            <li><a href="https://github.com/KDavis006/Calculator" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://kdavis006.github.io/Calculator/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/Tic-Tac-Toe.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Tic-Tac-Toe</h1>
+          <p>Date: 12/14/2022</p>
+          <p>Basic Tic Tac Toe website that keeps track of score also the Fourth Project of the first semester.</p>
+          <ul>
+            <li><a href="https://github.com/KDavis006/Tic-Tac-Toe" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://kdavis006.github.io/Tic-Tac-Toe/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/Portfolio1.0.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Portfolio 1.0</h1>
+          <p>Date: 12/19/2022</p>
+          <p>My first iteration for my portfolio and the Final project for the first semester.</p>
+          <ul>
+            <li><a href="https://github.com/KDavis006/Portfolio-1.0" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://kdavis006.github.io/Portfolio-1.0/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/Rigged_election.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Rigged Election</h1>
+          <p>Date: 01/27/2023</p>
+          <p>A fun project to start of the second semester about a rigged election.</p>
+          <ul>
+            <li><a href="https://github.com/KDavis006/rigged" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://kdavis006.github.io/rigged/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/Client-Website.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Client Website</h1>
+          <p>Date: 03/27/2023</p>
+          <p>A project where we work with an actual client in a team to mak them a website and the second biggest project of the year.</p>
+          <ul>
+            <li><a href="https://github.com/RenLevingar/ClientWebsite2023" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://renlevingar.github.io/ClientWebsite2023/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" hover project-card">
+      <div class="project-image">
+        <img src="./images/FBLA-Game.png" />
+      </div>
+      <div class="project-details">
+        <div class="center">
+          <h1 class="project-h1">Impossible Word</h1>
+          <p>Date: 03/31/2023</p>
+          <p>My main project to compete in FBLA game development and simulation and the biggest project I did in the school year</p>
+          <ul>
+            <li><a href="https://github.com/KDavis006/Game" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://kdavis006.github.io/Game/" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of the projects area -->
+
+  <!-- start of my resume -->
+  <div id='resume' class="resume">
+    <div class="resume-border text-warning">
+      <h1 class="text-center text-primary">Resume</h1><br><br><br><br>
+      <h2 class="text-center text-danger">Kyle Davis</h2>
+      <h4 class="text-center text-danger">Phoenix, AZ</h4>
+      <h4 class="text-center text-danger">silvanarixkyle@gmail.com</h4><br><br><br><br>
+
+      <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
+
+
+    <h3 class="text-primary">Skills</h3><br><br><br>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-warning">Can understand some Spanish</li><br>
+      <li class="list-group-item text-warning">Beginner Back-end Developer</li><br>
+      <li class="list-group-item text-warning">Solid understanding of Javascript/CSS/HTML</li><br>
+      <li class="list-group-item text-warning">Basic but still decent understanding of Bootstrap/Jquery/SCSS</li><br>
+      <li class="list-group-item text-warning">Good at going and getting info off of the web and fast learner</li><br>
+      <li class="list-group-item text-warning">Very strong knowledge retention and common sense</li><br>
+      <li class="list-group-item text-warning">Strong use of agile development practices</li><br>
+    </ul><br><br><br><br><br><br><br><br><br><br>
+
+    <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
+
+    <h3 class="text-primary">Experience</h3><br><br><br>
+
+      <h5>Recycle Your Bicycle, Phoenix, AZ - <i>Volunteer</i></h5><br>
+      <p><i>November 2022</i></p><br>
+      <p>Refurbishing bikes for foster kids</p><br><br><br>
+
+      <h5>Fry's Food and Drug, Phoenix, AZ - <i>Cashier</i></h5><br>
+      <p><i>June 2022 - July 2022</i></p><br>
+      <p>Help people throughout the store and helped handle transactions</p><br><br><br><br>
+
+      <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
+
+    <h3 class="text-primary">Education</h3><br><br><br>
+
+      <h5>West-MEC Coding Program, Phoenix, AZ</h5><br>
+      <p><i>August 2022 - May 2024</i></p><br>
+      <p>This two-year interactive program prepares students for a career as a software developer. The program teaches students how to design and develop software, build apps for phones, tablets, and computers.</p><br><br><br>
+
+      <h5>Moon Valley Highschool, Phoenix, AZ</h5><br>
+      <p><i>August 2020 - May 2024</i></p><br><br><br><br>
+
+      <img src="./images/Controller.png" alt="controller" class="timeline-image"><br><br>
+
+
+    <h3 class="text-primary">Exrtacurricular and Awards</h3><br><br><br>
+
+      <h5>FBLA Officer - Treasurer</h5><br>
+      <p><i>August 2022 - May 2023</i></p><br>
+      <p>I've been a member since 2022 and it has helped me in my communication and leadership skills.</p><br><br><br>
+
+      <h5>Moon Valley Chess Club</h5><br>
+      <p><i>August 2021 - present</i></p><br>
+      <p>I've been in the chess club since 2021 and it has helped me with making obligations and seeing them through and it has also helped me work on a team.</p><br><br><br>
+
+      <h5>Certificate of Arizona Technical Skills Standards</h5><br>
+      <p>Certificate for software and app design</p>
+
+    </div>
+  </div>
+  <!-- end of my resume -->
+
+  <br><br><br><br><br><br><br><br>
+
+  <!-- start of Contact Me -->
+  <div id="contacts" class="mb-4 text-center">
+    <h1 class="text-primary">--Contact Me--</h1>
+    <br><br>
+    <h3 class="hover text-danger">Email: <a href="mailto: silvanarixkyle@gmail.com">silvanarixkyle@gmail.com</a></h3>
+  </div>
+  <!-- end of Contact Me -->
+
+  <br><br><br><br><br><br><br><br>
+
+  <!-- start of footer -->
+  <footer class="text-center hover">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.linkedin.com/in/kyle-davis-42530b25b/" role="button" data-mdb-ripple-color="dark" target="_blank"><i
+            class="fab fa-linkedin text-primary"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://github.com/KDavis006" role="button" target="_blank"><i
+            class="fab fa-github text-primary"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Developed By -->
+    <div class="text-center p-3 text-danger">
+      Developed By: Kyle Davis
+    </div>
+    <!-- Developed By -->
+  </footer>
+  <!-- end of footer -->
+
+  <!-- links to my js files -->
+  <script src="script.js"></script>
+</body>
+
 </html>

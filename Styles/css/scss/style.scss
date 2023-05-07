@@ -7,8 +7,11 @@
 *{
   // applies the custom font to everythign on the page
   font-family: BigFont;
-  cursor: none;
   overflow-x: hidden;
+}
+
+body{
+  cursor: url('../../images/pacmanCursor.gif'), auto;
 }
 
 #ghost{
@@ -21,23 +24,11 @@
     z-index: 100;
 }
 
-#pacman {
-  position: absolute;
-    transform: translate(-50%, -50%);
-    height: 55px;
-    width: 55px;
-    // border-radius: 50%;
-    // border: 2px solid white;
-    z-index: 110;
-}
 
 .full{
- display:flex;
- flex-direction: row;
+  display:flex;
+  flex-direction: row;
   height: 100vh;
-  width: 100%;
-  flex-wrap: wrap;
-  align-content: center;
   background-image: url(../../images/stars.gif);
   background-size: cover;
   resize: both;
@@ -56,7 +47,12 @@
 }
 
 .h-30{
-  height: 30vh;
+  min-height: 30vh;
+  max-height: max-content;
+}
+
+.w-70{
+  width: 70%;
 }
 
 .my-50{
@@ -68,5 +64,403 @@
 }
 
 nav{
-  z-index: 2;
+  overflow-x: hidden;
 }
+
+.filler {
+  display: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  transition: 1s;
+  &:hover{
+    transform: translate(-35%, 0%);
+  }
+}
+
+.cards{
+  padding: {
+    top: 1.25rem;
+    left: 25vw;
+  }
+  background: #000;
+  p{
+    font-size: .75rem;
+  }
+  li{
+    font-size: .75rem;
+  }
+}
+
+.card{
+  border: violet solid 3px;
+}
+
+.projects{
+  padding: {
+    top: 6.25rem;
+  }
+  background-image: url(../../images/pacmanBackground.jpg);
+} 
+
+.project-card {
+  transform: translate(25%, -1%);
+  width: 70vw;
+  margin: {
+    top: 3.125rem;
+  }
+  background: #000;
+  overflow-y: hidden;
+  border-radius: 1.5625rem;
+}
+
+.project-card{
+  .project-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.project-card{
+  .project-image{
+    img{
+      width: 100%;
+      transition: .5s;
+    }  
+  }
+}
+
+.project-card{
+  &:hover{
+    .project-image{
+      img{
+        opacity: .5;
+        transform: translateX(30%);
+        /*100%*/
+      }
+    }  
+  }
+}
+
+.project-card{
+  .project-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    /*100%*/
+    height: 100%;
+    background: violet;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+  }
+}
+
+.project-card {
+  &:hover{
+    .project-details{
+      transform: perspective(2000px) rotateY(0deg);
+    }  
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      // padding: 20px;
+      text-align: center;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      font-size: .9375rem;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.project-card {
+  .project-details{
+    .center{
+      h1{
+        margin: 0;
+        padding: 0;
+        color: #ff3636;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      h1{
+        span{
+          font-size: .875rem;
+          color: #262626;
+        }
+      }
+    }
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      p{
+        padding: 0;
+        color: #262626;
+      }
+    }
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      ul{
+  margin: 10px auto 0;
+  padding: {
+    bottom: 2px;
+  }
+  display: table;
+      }
+    }
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      ul{
+        li{
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+        }
+      }
+    }
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      ul{
+        li{
+          a{
+  display: block;
+  background: #262626;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  transform: .5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project-card{
+  .project-details{
+    .center{
+      ul{
+        li{
+          &:hover{
+  background: #ff3636;
+          }
+        }
+      }
+    }
+  }
+}
+
+.resume{
+  padding: {
+    top: 50px;
+  }
+}
+
+.resume-border{
+  margin: {
+    left: 10vw;
+  }
+  padding: {
+    left: 10vw;
+  }
+  overflow-wrap: break-word;
+  border-left: violet solid 3px;
+}
+
+.contact-images{
+  display:block;
+  width: 150px;
+  height: 150px;
+  margin: {
+    left: 25%;
+  }
+}
+
+.mail{
+  width: 500px;
+  height: 100px;
+  margin: {
+    left: 33%;
+  }
+}
+
+.timeline-image{
+  height: 64px;
+  transform: translate(-100%);
+}
+
+
+.float{
+  float: inline-start;
+}
+
+.nav-expand-lg{
+.nav-row{
+  flex-direction: row;
+}
+}
+
+// start of the media queries
+
+@media (max-width: 769px){
+  .full{
+    flex-direction: column;
+    justify-content: center;
+    padding: {
+      left: 10vw;
+    }
+    img{
+      margin: {
+        top: 0;
+        bottom: 0;
+        left: 20vw;
+      }
+      width: 30%;
+    }
+    .small{
+      height: auto;
+      margin: {
+        top: 10vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 601px){
+
+  .center {  
+      &:hover {
+        transform: none;
+      }
+    }
+    .cards{
+      padding: {
+        left: 0;
+      }
+    }
+
+    .w-70{
+      width:100vw;
+    }
+
+  .project-card {
+      .project-details {
+        .center {
+          h1 {
+            font-size: .75rem;
+          }
+          p{
+            font-size: .5rem;
+          }
+        }
+      }
+    }
+
+    .fs-0{
+      font-size: 1.5rem;
+    }
+  h1{
+    font-size: .9375rem;
+  }
+  h2{
+    font-size: .875rem;
+  }
+  h3{
+    font-size: .8125rem;
+  }
+  h4{
+    font-size: .75rem;
+  }
+  h5{
+    font-size: .6875rem;
+  }
+  h6{
+    font-size: .625rem;
+  }
+  p{
+    font-size: .625rem;
+  }
+  li{
+    font-size: .625rem;
+  }
+}
+
+@media (max-width: 430px){
+.project-card {
+    .project-details {
+      .center {
+        h1 {
+          font-size: .625rem;
+        }
+        p{
+          font-size: .5rem;
+        }
+      }
+    }
+  }
+
+    .fs-0 {
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 388px){
+  .project-card {
+      .project-details {
+        .center {
+          h1 {
+            font-size: .5rem;
+          }
+  
+          p {
+            font-size: .4375rem;
+            margin: {
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+        .fs-0 {
+          font-size: .9375rem;
+        }
+
+        p{
+          font-size: .4375rem;
+        }
+  }
