@@ -79,7 +79,7 @@ nav{
   text-align: center;
   transition: 1s;
   &:hover{
-    transform: translate(-35%, 0%);
+    box-shadow:10px 5px 5px rgba(235, 39, 242, 0.5);
   }
 }
 
@@ -87,6 +87,7 @@ nav{
   padding: {
     top: 1.25rem;
     left: 25vw;
+    bottom: 1.25rem;
   }
   background: #000;
   p{
@@ -462,5 +463,11 @@ nav{
 
         p{
           font-size: .4375rem;
+        }
+        .mx-2{
+          margin: {
+            left: 0;
+            right: 0;
+          }
         }
   }

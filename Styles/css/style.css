@@ -74,12 +74,13 @@ nav {
   transition: 1s;
 }
 .center:hover {
-  transform: translate(-35%, 0%);
+  box-shadow: 10px 5px 5px rgba(235, 39, 242, 0.5);
 }
 
 .cards {
   padding-top: 1.25rem;
   padding-left: 25vw;
+  padding-bottom: 1.25rem;
   background: #000;
 }
 .cards p {
@@ -315,5 +316,9 @@ nav {
   }
   p {
     font-size: 0.4375rem;
+  }
+  .mx-2 {
+    margin-left: 0;
+    margin-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
