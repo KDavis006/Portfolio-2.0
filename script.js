@@ -101,5 +101,9 @@ cards.forEach(div => {
         const deltaY = e.clientY - rect.top - centerY;
 
         div.style.transform = `rotate3d(${+deltaY}, ${-deltaX}, 0, 30deg)`;
+
+        var shadowX = deltaX * 0.1;
+        var shadowY = deltaY * 0.1;
+        $(div).css("box-shadow", `${shadowX}px ${shadowY}px 2rem .05rem rgba(134, 85, 255, .4)`);
     }
-  });  
+  });
