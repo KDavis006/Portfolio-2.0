@@ -5,27 +5,13 @@
 * {
   font-family: BigFont;
   overflow-x: hidden;
+  cursor: default;
 }
 
 body {
-  cursor: url(../../../images/ezgif-2-a0c2c62acb-gif-im/frame_0_delay-0.05s.gif);
-  animation: ani-cursor-4 12ms step-end infinite;
+  cursor: default;
 }
 
-@keyframes ani-cursor-4 {
-  0% {
-    cursor: url(../../../images/ezgif-2-a0c2c62acb-gif-im/frame_0_delay-0.05s.gif), auto;
-  }
-  25% {
-    cursor: url(../../../images/ezgif-2-a0c2c62acb-gif-im/frame_1_delay-0.05s.gif), auto;
-  }
-  50% {
-    cursor: url(../../../images/ezgif-2-a0c2c62acb-gif-im/frame_2_delay-0.05s.gif), auto;
-  }
-  75% {
-    cursor: url(../../../images/ezgif-2-a0c2c62acb-gif-im/frame_3_delay-0.05s.gif), auto;
-  }
-}
 #ghost {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -336,4 +322,8 @@ nav {
     margin-left: 0;
     margin-right: 0;
   }
+}
+#certification {
+  width: 70vw;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
